@@ -41,7 +41,7 @@ function errorOccur(msg) {
       function(){
          document.getElementById("errorMsgDiv").remove();
       }, 2000
-   )
+   );
 }
 
 async function getCurrentUrl() {
