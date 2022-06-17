@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style="min-width:600px;">
+  <head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../service/service.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <div>
+        <div class="card">
+          <nav class="navbar navbar-dark" style="position: fixed; width: 100%; background-color: #006400;">
+            <div class="container-fluid">
+              <span id="domainSection" class="navbar-brand mb-0 h1">Navbar</span>
+              <button id="redirectButton" class="btn btn-dark mx-3" style="float: right;">
+                GO!
+              </button>
+            </div>
+          </nav>
+          <div class="card-body mt-5">
+            <div id="errorSection"></div>
+            <div class="mt-3 mx-3">
+              <h6 class="fw-bold"> Info. </h6>
+              <hr>
+              <p class="mx-2">
+                <span class="badge bg-secondary">Protocol</span>
+                <span id="protocolSection">protocol</span>
+              </p>
+              <p class="mx-2">
+                <span class="badge bg-secondary">Path</span>
+                <span id="pathSection">/</span>
+              </p>
+              <p id="portParentSection" class="mx-1">
+                <span class="badge bg-secondary">port</span>
+                <span id="portSection">port</span>
+              </p>
+              <div id="paramTotalSection" class="mt-5">
+                <h6 class="fw-bold"> Params. </h6>
+                <hr>
+                <table id="paramTableSection" class="table table-hover mx-2">
+                  <thead>
+                    <tr>
+                      <th scope="col">KEY</th>
+                      <th scope="col">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBodySection" style="overflow-y: scroll;">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "Url Controller",
+    "description": "Made by Park Jeong Hyun (rootjh937dev@gmail.com)",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "html/popup.html"
+    },
+    "background": {
+        "service_worker": "service/background.js"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["css/default.css"],
+            "js": ["service/service.js"]
+        }
+    ]
+}
